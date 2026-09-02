@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>بانک مرکزی جمهوری اسلامی ایران</title>
+<html lang="fa" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>بانک مرکزی جمهوری اسلامی ایران</title>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet"/>
 <style>
 :root{--header:#4a4a4a;--search:#1a4d73;--brand:#e85d1c;--sky:#2c8fc4;--foot:#3f3f3f;--ink:#333;--muted:#6b6b6b;--line:#d4d4d4;--bg:#f4f4f4}
@@ -49,28 +45,23 @@ label{display:block;font-size:13px;margin:12px 0 6px}input{width:100%;border:1px
 <button type="button" data-go="process">بررسی فرآیند</button>
 <button type="button" data-go="inq">استعلام</button>
 <span id="who"></span>
-<button type="button" class="out" id="logout">خروج</button>
-</div>
+<button type="button" class="out" id="logout">خروج</button></div>
 <div class="menu" id="menu">
 <button type="button" data-go="login" id="deskLink">میز خدمت بانک مرکزی</button>
 <button type="button" data-go="home">اخبار بانک</button>
 <button type="button" data-go="process">بررسی فرآیند رفع مسدودی</button>
-<button type="button" data-go="inq">استعلام مسدودی</button>
 </div>
 <div id="app"></div>
-<footer>
-<a class="fl" data-go="home">همه خبرها</a>
-<a class="fl" data-go="process">بررسی فرآیند رفع مسدودی</a>
+<footer><a class="fl" data-go="home">همه خبرها</a><a class="fl" data-go="process">بررسی فرآیند رفع مسدودی</a>
 <div class="contact-wrap"><div class="contact-tag">اطلاعات تماس</div>
 <div class="contact"><div style="font-size:18px;margin-bottom:10px">بانک مرکزی جمهوری اسلامی ایران</div><div>تهران - بلوار میرداماد - شماره ۱۹۸</div><div>مرکز تلفن : ۲۹۹۵۰۰۰۰</div></div></div>
-<div class="copy">تمامی حقوق مادی و معنوی این پایگاه متعلق به بانک مرکزی جمهوری اسلامی ایران است.</div>
-</footer>
+<div class="copy">تمامی حقوق مادی و معنوی این پایگاه متعلق به بانک مرکزی جمهوری اسلامی ایران است.</div></footer>
 <button class="fab" type="button">♿</button>
 <script>
 (function(){
 var STAFF=[{code:"14051200",name:"حسین کریمی"},{code:"14051201",name:"مریم رضایی"},{code:"14051202",name:"علی محمدی"}];
 var NEWS=[["آمادگی بانک مرکزی برای عرضه ارز تا دو میلیارد دلار","موسسات اعتباری پیشرو در نظارت شرعی معرفی شدند","شبکه بانکی در خط مقدم جنگ ترکیبی است"],["نرخ حواله و اسکناس مرکز مبادله به‌روزرسانی شد","دستورالعمل رفع مسدودی حساب‌های مالیاتی ابلاغ شد","عملکرد پایا و ساتنا بدون اختلال اعلام شد"],["تخصیص ارز دارو و کالاهای اساسی ادامه دارد","گزارش ماهانه نقدینگی منتشر شد","نشست مدیران نظارت برگزار شد"],["عرضه اوراق گواهی سپرده اعلام شد","سامانه استعلام مسدودی به‌روزرسانی شد","همایش سیاست پولی فردا برگزار می‌شود"]];
-var EV=[["نشست بانک مرکزی و سازمان مالیاتی — میرداماد","کارگاه رفع مسدودی — سالن همایش","روادید ارزی زیارت و درمان — مرکز مبادله"],["جلسه شورای فقهی — ساختمان مرکزی","نسخه جدید ساتنا","روادید ارزی دانشجویی"],["بازدید نظارت استان مرکزی — اراک","میز خدمت رفع مسدودی مالیاتی","روادید حج و عمره"],["همایش بانکداری اسلامی","کارگروه شبا پایا ساتنا","روادید مأموریت و درمان"]];
+var EV=[["نشست بانک مرکزی و سازمان مالیاتی — میرداماد","کارگاه رفع مسدودی — سالن همایش","روادید ارزی زیارت و درمان — مرکز مبادله"],["جلسه شورای فقهی","نسخه جدید ساتنا","روادید ارزی دانشجویی"],["بازدید نظارت استان مرکزی — اراک","میز خدمت رفع مسدودی مالیاتی","روادید حج و عمره"],["همایش بانکداری اسلامی","کارگروه شبا پایا ساتنا","روادید مأموریت و درمان"]];
 var VISA=[["۴۲٬۰۰۰","۴۳٬۲۰۰","۴۲٬۸۰۰"],["۴۲٬۱۵۰","۴۳٬۳۵۰","۴۲٬۹۰۰"],["۴۱٬۹۵۰","۴۳٬۱۰۰","۴۲٬۷۰۰"],["۴۲٬۳۰۰","۴۳٬۴۸۰","۴۳٬۰۰۰"]];
 var WD=["یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه","شنبه"];
 var MO=["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"];
@@ -80,7 +71,7 @@ function fa(s){return String(s).replace(/[0-9]/g,function(d){return "۰۱۲۳۴�
 function nowInfo(){var d=new Date();var j=toJalali(d.getFullYear(),d.getMonth()+1,d.getDate());var slot=Math.floor(d.getTime()/(6*3600*1000));var ws=Math.floor(d.getHours()/6)*6;return{slot:slot,dateFa:fa(j.jy+"/"+pad(j.jm)+"/"+pad(j.jd)),dateLong:WD[d.getDay()]+" "+fa(j.jd)+" "+MO[j.jm-1]+" "+fa(j.jy),timeFa:fa(pad(d.getHours())+":"+pad(d.getMinutes())),window:fa(pad(ws)+":00")+" تا "+fa(pad((ws+6)%24)+":00")}}
 var CASE={name:"مریم جعفری",nid:"۰۵۳۲۵۹۱۰۰۲",bank:"بانک ملت",acc:"۹۹۸۷۰۴۵۶۳۰۱",amount:"۷۴۹٬۸۶۵٬۷۹۰٬۴۳۲ ریال",track:"RMS-1405-10089",status:"در حال بررسی رفع مسدودی"};
 var session=null,slide=0,view="home";
-function go(v){document.getElementById("menu").classList.remove("open");if("dash unblocks inq case process".indexOf(v)>=0&&!session){view="login";render();return}view=v;render();window.scrollTo(0,0)}
+function go(v){document.getElementById("menu").classList.remove("open");if("dash unblocks inq case process letter-tax letter-court letter-cbi".indexOf(v)>=0&&!session){view="login";render();return}view=v;render();window.scrollTo(0,0)}
 function pages(){
 var info=nowInfo(), pack=NEWS[info.slot%4], ev=EV[info.slot%4], visa=VISA[info.slot%4];
 if(view==="home"){
@@ -96,10 +87,14 @@ if(view==="dash"){
 return '<div class="page wrap"><div class="card"><h2>سلام، '+session.name+'</h2><p><b data-go="case">'+CASE.name+'</b> — '+CASE.track+' — <span class="badge">'+CASE.status+'</span></p></div><div class="card"><button type="button" class="btn" data-go="process">بررسی فرآیند رفع مسدودی حساب</button></div></div>';
 }
 if(view==="unblocks"||view==="case"){
-return '<div class="page wrap"><div class="card"><h2>'+CASE.name+'</h2><div class="grid"><div>کد ملی: '+CASE.nid+'</div><div>'+CASE.bank+' '+CASE.acc+'</div><div>مسدود: '+CASE.amount+'</div><div>پرداخت مالیات: ۳۱٬۳۷۰٬۰۹۸٬۴۸۰ ریال — ۱۴۰۵/۰۵/۲۵</div></div></div><div class="card"><button type="button" class="btn" data-go="process">بررسی فرآیند</button></div></div>';
+return '<div class="page wrap"><div class="card"><h2>'+CASE.name+'</h2><div class="grid"><div>کد ملی: '+CASE.nid+'</div><div>'+CASE.bank+' '+CASE.acc+'</div><div>مسدود: '+CASE.amount+'</div><div>پرداخت مالیات: ۳۱٬۳۷۰٬۰۹۸٬۴۸۰ ریال — ۱۴۰۵/۰۵/۲۵</div></div></div><div class="card"><h2>نامه‌های ارسال‌شده</h2><p><a href="#" data-go="letter-tax">نامه دارایی / امور مالیاتی اراک به اجرای احکام</a><br><small>۱۴۰۵/م/۴۴۱۲/آ — ۱۸ مرداد</small></p><p><a href="#" data-go="letter-court">نامه شعبه دوم اجرای احکام اراک به بانک مرکزی</a><br><small>۱۴۰۵/اج/۲/۸۸۱۹ — ۲۰ مرداد</small></p><p><a href="#" data-go="letter-cbi">نامه بانک مرکزی — ابلاغ مسدودی</a><br><small>۱۴۰۵/مس/۷۷۱۰۴ — ۲۱ مرداد</small></p></div><div class="card"><button type="button" class="btn" data-go="process">بررسی فرآیند</button></div></div>';
+}
+if(view==="letter-tax"||view==="letter-court"||view==="letter-cbi"){
+var L={"letter-tax":{org:"سازمان امور مالیاتی کشور",line:"اداره امور مالیاتی شهرستان اراک",no:"۱۴۰۵/م/۴۴۱۲/آ",date:"۱۴۰۵/۰۵/۱۸",to:"ریاست محترم شعبه دوم اجرای احکام مدنی اراک",sub:"درخواست مسدودی حساب مریم جعفری",body:"با سلام؛ خانم مریم جعفری به شماره ملی ۰۵۳۲۵۹۱۰۰۲ بدهی مالیاتی قطعی ۷۴۹٬۸۶۵٬۷۹۰٬۴۳۲ ریال دارد. تقاضا می‌شود حساب شماره ۹۹۸۷۰۴۵۶۳۰۱ بانک ملت تا سقف بدهی مسدود گردد.",role:"رئیس اداره امور مالیاتی اراک",sign:"حسن نادری"},"letter-court":{org:"قوه قضاییه — دادگستری استان مرکزی",line:"شعبه دوم اجرای احکام مدنی اراک",no:"۱۴۰۵/اج/۲/۸۸۱۹",date:"۱۴۰۵/۰۵/۲۰",to:"ریاست محترم بانک مرکزی — اداره مسدودی حساب‌ها",sub:"دستور قضایی مسدودی حساب",body:"با سلام؛ پیرو نامه ۱۴۰۵/م/۴۴۱۲/آ مقرر می‌دارد حساب ۹۹۸۷۰۴۵۶۳۰۱ به نام مریم جعفری از تاریخ ابلاغ تا سقف ۷۴۹٬۸۶۵٬۷۹۰٬۴۳۲ ریال مسدود شود و نتیجه به این شعبه اعلام گردد.",role:"دادورز شعبه دوم اجرای احکام",sign:"علیرضا میرزایی"},"letter-cbi":{org:"بانک مرکزی جمهوری اسلامی ایران",line:"اداره اطلاعات بانکی و مسدودی حساب‌ها",no:"۱۴۰۵/مس/۷۷۱۰۴",date:"۱۴۰۵/۰۵/۲۱",to:"ریاست محترم شعبه دوم اجرای احکام اراک",sub:"ابلاغ اجرای دستور مسدودی",body:"با سلام؛ عطف به نامه ۱۴۰۵/اج/۲/۸۸۱۹ دستور مسدودی در سامانه ثبت و در ۱۴۰۵/۰۵/۲۱ به بانک ملت ابلاغ شد. حساب ۹۹۸۷۰۴۵۶۳۰۱ مسدود و کارکرد آن متوقف گردیده است.",role:"مدیر اداره اطلاعات بانکی",sign:"محسن کاظمی"}}[view];
+return '<div class="page wrap"><button type="button" class="btn" data-go="case">بازگشت به پرونده</button><div class="card" style="background:#f3ead6;line-height:2"><div style="text-align:center;font-weight:700">'+L.org+'</div><div style="text-align:center">'+L.line+'</div><p>شماره: '+L.no+' — تاریخ: '+L.date+'</p><p>به: '+L.to+'</p><p><b>موضوع: '+L.sub+'</b></p><p>'+L.body+'</p><p style="text-align:left">'+L.role+'<br>'+L.sign+'<br>مهر و امضا</p></div></div>';
 }
 if(view==="process"){
-return '<div class="page wrap"><div class="card"><h2>بررسی فرآیند رفع مسدودی حساب</h2><p>'+CASE.track+' — '+CASE.name+'</p><span class="badge">'+CASE.status+'</span></div><div class="card"><div class="step done"><b>۱. دستور قضایی مسدودی</b><span>۱۸ و ۲۰ مرداد</span></div><div class="step done"><b>۲. ابلاغ بانک مرکزی به ملت</b><span>۲۱ مرداد</span></div><div class="step done"><b>۳. پرداخت مالیات ۳۱٬۳۷۰٬۰۹۸٬۴۸۰ ریال</b><span>۲۵ مرداد</span></div><div class="step now"><b>۴. درخواست رفع مسدودی</b><span>۲۵ مرداد</span></div><div class="step"><b>۵. کنترل کارشناسی</b><span>در انتظار تأیید</span></div><div class="step"><b>۶. ابلاغ رفع به بانک ملت</b><span>پس از تأیید</span></div></div><div class="card"><button type="button" class="btn ok" id="approveUnblock">تأیید و صدور دستور رفع مسدودی</button><div id="procMsg"></div></div></div>';
+return '<div class="page wrap"><div class="card"><h2>بررسی فرآیند رفع مسدودی حساب</h2><p>'+CASE.track+' — '+CASE.name+'</p><span class="badge">'+CASE.status+'</span></div><div class="card"><div class="step done"><b>۱. دستور قضایی مسدودی</b><span>۱۸ و ۲۰ مرداد</span><p><a href="#" data-go="letter-tax">نامه دارایی</a> · <a href="#" data-go="letter-court">نامه اجرای احکام</a></p></div><div class="step done"><b>۲. ابلاغ بانک مرکزی به ملت</b><span>۲۱ مرداد</span><p><a href="#" data-go="letter-cbi">نامه بانک مرکزی</a></p></div><div class="step done"><b>۳. پرداخت مالیات ۳۱٬۳۷۰٬۰۹۸٬۴۸۰ ریال</b><span>۲۵ مرداد</span></div><div class="step now"><b>۴. درخواست رفع مسدودی</b><span>۲۵ مرداد</span></div><div class="step"><b>۵. کنترل کارشناسی</b><span>در انتظار تأیید</span></div><div class="step"><b>۶. ابلاغ رفع به بانک ملت</b><span>پس از تأیید</span></div></div><div class="card"><button type="button" class="btn ok" id="approveUnblock">تأیید و صدور دستور رفع مسدودی</button><div id="procMsg"></div></div></div>';
 }
 if(view==="inq"){
 return '<div class="page wrap"><div class="card"><h2>استعلام مسدودی</h2><label>کد ملی</label><input id="nid" placeholder="0532591002"/><button type="button" class="btn" id="doInq">استعلام</button><div id="inqOut"></div></div></div>';
@@ -131,5 +126,4 @@ document.getElementById("q").onkeydown=function(e){if(e.key==="Enter"){e.prevent
 setInterval(function(){if(view==="home"){slide=(slide+1)%3;render()}},6000);
 render();
 })();
-</script>
-</body></html>
+</script></body></html>
